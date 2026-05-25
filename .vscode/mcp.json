@@ -2,8 +2,8 @@
   "servers": {
     "pdf-docx-tools": {
       "type": "stdio",
-      "command": "python",
-      "args": ["-m", "mcp_pdf_server"]
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/iduryodhanrao/MCP.git", "python", "-m", "mcp_pdf_server"]
     }
   }
 }

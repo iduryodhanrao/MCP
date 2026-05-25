@@ -17,6 +17,24 @@ pip install -e .
 python -m mcp_pdf_server
 ```
 
+## VS Code Copilot MCP
+
+If you want Copilot Agents to auto-install and run this server, use `uvx` in your MCP config:
+
+```json
+{
+	"servers": {
+		"pdf-docx-tools": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": ["--from", "git+https://github.com/iduryodhanrao/MCP.git", "python", "-m", "mcp_pdf_server"]
+		}
+	}
+}
+```
+
+This requires `uv`/`uvx` to be installed on the machine.
+
 ## Notes
 
 - DOCX to PDF conversion uses `docx2pdf`. On Windows, this requires Microsoft Word to be installed.
