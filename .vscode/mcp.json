@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "pdf-docx-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "mcp_pdf_server"]
+    }
+  }
+}
